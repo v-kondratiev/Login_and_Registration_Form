@@ -82,6 +82,23 @@ body{
 
 .input-field i.showHidePw{
     right: 0;
+}
+
+.form .checkbox-text{
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.checkbox-text .checkbox-content{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input{
+    margin: 0 8px -2px 4px;
+    accent-color: #4070f4;
 
 }
 
