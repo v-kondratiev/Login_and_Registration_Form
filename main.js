@@ -1,5 +1,5 @@
 
-let pwShowHide = document.querySelectorAll(".pwShowHide");
+let pwShowHide = document.querySelectorAll(".showHidePw");
 let pwFields = document.querySelectorAll(".password");
 
 ///////Show/Hide password and change icon/////
