@@ -18,26 +18,26 @@
               <span class="title">Login</span>
 
               <form action="#">
-                  <div class="input-field">
-                      <input type="text" placeholder="Enter your email" required autofocus>
+                  <div class="form-group">
+                      <input type="email" name="emailInput" placeholder="Enter your email" required autofocus>
                       <i class="uil uil-envelope-alt icon"></i>
                   </div>
-                  <div class="input-field">
-                      <input type="password"  class="password" placeholder="Enter your password" required>
+                  <div class="form-group">
+                      <input type="password" class="password" name="passwordInput" placeholder="Enter your password" minlength="4" maxlength="16" required>
                       <i class="uil uil-lock icon" ></i>
                       <i class="uil uil-eye-slash showHidePw" ></i>
                   </div>
 
                   <div class="checkbox-text">
                       <div class="checkbox-content">
-                          <input type="checkbox" id="logCheck">
+                          <input type="checkbox" id="logCheck" required>
                           <label for="logCheck" class="text">Remember me?</label>
                       </div>
 
                       <a href="#" class="text">Forgot password?</a>
                   </div>
 
-                  <div class="input-field button">
+                  <div class="form-group button">
                       <input type="submit" value="Login" >
                   </div>
               </form>
@@ -55,33 +55,34 @@
               <span class="title">Registration</span>
 
               <form action="#">
-                  <div class="input-field">
-                      <input type="text" placeholder="Enter your name" required autofocus>
+                  <div class="form-group">
+                      <input type="text" name="nameInput" placeholder="Enter your name" required autofocus>
                       <i class="uil uil-user"></i>
                   </div>
-                  <div class="input-field">
-                      <input type="text"  name="emailInput" placeholder="Enter your email" required>
+                  <div class="form-group">
+                      <input type="email"  name="emailInput" placeholder="Enter your email" required>
                       <i class="uil uil-envelope-alt icon"></i>
+                      <span class="form__error">Это поле должно содержать E-Mail в формате example@site.com</span>
                   </div>
-                  <div class="input-field">
-                      <input type="password" class="password" placeholder="Create a password" name="passwordInput" minlength="8" maxlength="16" required>
+                  <div class="form-group">
+                      <input type="password" class="password" name="passwordInput" placeholder="Create a password" name="passwordInput" minlength="8" maxlength="16" required>
                       <i class="uil uil-lock icon" ></i>
 
                   </div>
-                  <div class="input-field">
-                      <input type="password" class="password"  placeholder="Confirm a password" name="passwordInput" minlength="8" maxlength="16" required>
+                  <div class="form-group">
+                      <input type="password" class="password" name="passwordConfirmInput" placeholder="Confirm a password" name="passwordInput" minlength="8" maxlength="16" required>
                       <i class="uil uil-lock icon" ></i>
                       <i class="uil uil-eye-slash showHidePw" ></i>
                   </div>
 
                   <div class="checkbox-text">
                       <div class="checkbox-content">
-                          <input type="checkbox" id="termCon">
+                          <input type="checkbox" id="termCon" name="acceptedInput">
                           <label for="termCon" class="text">I accepted all terms and conditions</label>
                       </div>
                   </div>
 
-                  <div class="input-field button">
+                  <div class="form-group button">
                       <input type="submit" value="Signup">
                   </div>
               </form>
